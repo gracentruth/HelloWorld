@@ -27,7 +27,7 @@ public class Main {
                 case 4:
                     m.delete();
                     break;
-                case 5:
+                case 0:
                     System.out.println("종료");
                     check=false;
             }

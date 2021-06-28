@@ -31,7 +31,7 @@ public class Student {
     }
 
     public String toString(){
-        return this.id+"|"+this.name+" "+this.birth+" "+this.level+"학년 "+this.class_num+"반 "+this.num+"번 "+ this.in_time_h+"시"+this.in_time_m+"분 "+ this.out_time_h+"시"+this.out_time_m+"분";
+        return this.id+"  | "+this.name+" "+this.birth+" "+this.level+"학년 "+this.class_num+"반 "+this.num+"번 "+ this.in_time_h+"시"+this.in_time_m+"분 "+ this.out_time_h+"시"+this.out_time_m+"분";
     }
 
     public int getId() {

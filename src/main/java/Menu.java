@@ -25,6 +25,7 @@ public class Menu {
             System.out.println("등록된 학생이 없습니다.");
             return;
         }
+        System.out.println("No | 이름 생년월일 학년 반  번호 등교시간 하교시간");
         for(Student s:this.list){
             System.out.println(s.toString());
         }
@@ -53,8 +54,8 @@ public class Menu {
         s.setOut_time_h(sc.nextInt());
         System.out.print("분: ");
         s.setOut_time_m(sc.nextInt());
-        id_num=id_num+1;
-        s.setId(id_num);
+        //id_num=id_num+1;
+        s.setId(this.list.size()+1);
 
        this.list.add(s);
 
@@ -72,10 +73,11 @@ public class Menu {
             return;
         }
 
-        for (Student s: this.list) {
-           // System.out.println(s.getId() + "번째 학생 이름:" + s.getName());
-            System.out.println(s.toString());
-        }
+//        for (Student s: this.list) {
+//           // System.out.println(s.getId() + "번째 학생 이름:" + s.getName());
+//            System.out.println(s.toString());
+//        }
+        view();
 
         System.out.println("수정할 학생의 ID를 입력하시오 ");
         update_num=sc.nextInt();
@@ -113,10 +115,12 @@ public class Menu {
             return;
         }
 
-        for (Student s: this.list) {
-            // System.out.println(s.getId() + "번째 학생 이름:" + s.getName());
-            System.out.println(s.toString());
-        }
+//        for (Student s: this.list) {
+//            // System.out.println(s.getId() + "번째 학생 이름:" + s.getName());
+//            System.out.println(s.toString());
+//        }
+
+        view();
 
         System.out.println("삭제 할 학생의 ID를 입력하시오 ");
         delete_num=sc.nextInt();
