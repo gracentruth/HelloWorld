@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
 
-    private List<Student> list;
+    private List<Student> list = new ArrayList<Student>();
+    int id_num=0;
 
     Scanner sc=new Scanner(System.in);
 
@@ -28,10 +30,44 @@ public class Menu {
         }
     }
 
+    public void record(){
+
+        Student s=new Student();
+        System.out.println("학생 이름 입력");
+        s.setName(sc.next());
+        System.out.println("학년");
+        s.setLevel(sc.nextInt());
+        System.out.println("반");
+        s.setClass_num(sc.nextInt());
+        System.out.println("번호");
+        s.setNum(sc.nextInt());
+        System.out.println("생년월일");
+        s.setBirth(sc.nextInt());
+        System.out.println("등교시간");
+        System.out.print("시: ");
+        s.setIn_time_h(sc.nextInt());
+        System.out.print("분: ");
+        s.setIn_time_m(sc.nextInt());
+        System.out.println("하교시간");
+        System.out.print("시: ");
+        s.setOut_time_h(sc.nextInt());
+        System.out.print("분: ");
+        s.setOut_time_m(sc.nextInt());
+        id_num=id_num+1;
+        s.setId(id_num);
+
+       this.list.add(s);
+
+        System.out.println("학생 등교(하교)기록이 완료되었습니다.");
+
+    }
+
+    public void upload(){
+
+    }
+
+    public void delete(){
 
 
-
-
-
-
+    }
 }
