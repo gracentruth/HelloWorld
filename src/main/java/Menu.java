@@ -79,12 +79,7 @@ public class Menu {
 
         System.out.println("수정할 학생의 ID를 입력하시오 ");
         update_num=sc.nextInt();
-
-        System.out.println("hi");
-
-
-
-                System.out.println("학생 이름 입력");
+        System.out.println("학생 이름 입력");
                 this.list.get(update_num-1).setName(sc.next());
                 System.out.println("학년");
                 this.list.get(update_num-1).setLevel(sc.nextInt());
@@ -110,6 +105,28 @@ public class Menu {
     }
 
     public void delete(){
+
+        int delete_num;
+
+        if(this.list.size()==0){
+            System.out.println("등록된 학생이 없습니다.");
+            return;
+        }
+
+        for (Student s: this.list) {
+            // System.out.println(s.getId() + "번째 학생 이름:" + s.getName());
+            System.out.println(s.toString());
+        }
+
+        System.out.println("삭제 할 학생의 ID를 입력하시오 ");
+        delete_num=sc.nextInt();
+
+        this.list.remove(delete_num-1);
+
+        for(int i=0; i < list.size(); i++)
+            this.list.get(i).setId(i+1);
+
+        System.out.println("삭제되었습니다.");
 
 
     }
