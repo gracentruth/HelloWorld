@@ -62,7 +62,50 @@ public class Menu {
 
     }
 
-    public void upload(){
+    public void update(){
+
+       // Student s=new Student();
+        int update_num;
+
+        if(this.list.size()==0){
+            System.out.println("등록된 학생이 없습니다.");
+            return;
+        }
+
+        for (Student s: this.list) {
+           // System.out.println(s.getId() + "번째 학생 이름:" + s.getName());
+            System.out.println(s.toString());
+        }
+
+        System.out.println("수정할 학생의 ID를 입력하시오 ");
+        update_num=sc.nextInt();
+
+        System.out.println("hi");
+
+
+
+                System.out.println("학생 이름 입력");
+                this.list.get(update_num-1).setName(sc.next());
+                System.out.println("학년");
+                this.list.get(update_num-1).setLevel(sc.nextInt());
+                System.out.println("반");
+                this.list.get(update_num-1).setClass_num(sc.nextInt());
+                System.out.println("번호");
+                this.list.get(update_num-1).setNum(sc.nextInt());
+                System.out.println("생년월일");
+                this.list.get(update_num-1).setBirth(sc.nextInt());
+                System.out.println("등교시간");
+                System.out.print("시: ");
+                this.list.get(update_num-1).setIn_time_h(sc.nextInt());
+                System.out.print("분: ");
+                this.list.get(update_num-1).setIn_time_m(sc.nextInt());
+                System.out.println("하교시간");
+                System.out.print("시: ");
+                this.list.get(update_num-1).setOut_time_h(sc.nextInt());
+                System.out.print("분: ");
+                this.list.get(update_num-1).setOut_time_m(sc.nextInt());
+                System.out.println("수정되었습니다.");
+
 
     }
 

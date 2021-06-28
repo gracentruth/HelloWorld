@@ -20,18 +20,14 @@ public class Main {
                     break;
                 case 2:
                     m.record();
-                    System.out.println("2");
                     break;
                 case 3:
-                   // m.upload();
-                    System.out.println("3");
+                    m.update();
                     break;
                 case 4:
-                    System.out.println("4");
-                    //m.delete();
+                    m.delete();
                     break;
                 case 5:
-                    System.out.println("5");
                     System.out.println("종료");
                     check=false;
             }
