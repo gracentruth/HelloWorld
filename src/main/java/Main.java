@@ -1,15 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
 
-        int menu_num=1;
-        boolean check=true;
+        ArrayList<Student> list = new ArrayList<Student>();
 
-        Menu m=new Menu();
-        Scanner sc=new Scanner(System.in);
+        int menu_num = 1;
+        boolean check = true;
 
-        while(check) {
+        Menu m = new Menu(list);
+
+        Scanner sc = new Scanner(System.in);
+
+        while (check) {
             m.printMenu();
             menu_num = sc.nextInt();
 
@@ -29,7 +34,7 @@ public class Main {
                     break;
                 case 0:
                     System.out.println("종료");
-                    check=false;
+                    check = false;
             }
 
         }

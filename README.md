@@ -40,17 +40,28 @@ A. Project1 CRUD project
 
 B. Project2 CRUD + File/IO 
 
-   - Overriding 
+: Project1 + 파일저장기능 + 파일불러오기기능 
 
-   - Overload 
-   
-1. 외부 library 쓰는 법
+   1. 외부 library 쓰는 법
    
    - library 이름 검색 
    - maven 사이트 접속
    - build tool 맞게 dependency 복사
    - build.gradle 파일에 dependency안에 붙여넣기 
    
+   2. 파일 불러오기 기능 추가 
+    
+   : 프로그램 시작하면, data.txt 파일 불러온 후 리스트에 추가하도록 
+      
+   * 사용클래스 
+      - String Tokenizer
+      - BufferReader
+      - FileReader
+      - commons-io 라이브러리의 FileUtils 사용 
+   
+   
+      
+
 
    
     

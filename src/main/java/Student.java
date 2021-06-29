@@ -12,26 +12,26 @@ public class Student {
     private int out_time_m;
     private String memo;
 
-    public Student(){
+    public Student() {
 
     }
 
-    public Student(int id, String name, int birth,int level, int class_num,int num, int in_time_h,int in_time_m,int out_time_h,int out_time_m, String memo ) {
-        this.id=id;
+    public Student(int id, String name, int birth, int level, int class_num, int num, int in_time_h, int in_time_m, int out_time_h, int out_time_m, String memo) {
+        this.id = id;
         this.name = name;
-        this.birth=birth;
-        this.level=level;
-        this.class_num=class_num;
-        this.num=num;
-        this.in_time_h=in_time_h;
-        this.in_time_m=in_time_m;
-        this.out_time_h=out_time_h;
-        this.out_time_m=out_time_m;
-        this.memo=memo;
+        this.birth = birth;
+        this.level = level;
+        this.class_num = class_num;
+        this.num = num;
+        this.in_time_h = in_time_h;
+        this.in_time_m = in_time_m;
+        this.out_time_h = out_time_h;
+        this.out_time_m = out_time_m;
+        this.memo = memo;
     }
 
-    public String toString(){
-        return this.id+"  | "+this.name+" "+this.birth+" "+this.level+"학년 "+this.class_num+"반 "+this.num+"번 "+ this.in_time_h+"시"+this.in_time_m+"분 "+ this.out_time_h+"시"+this.out_time_m+"분";
+    public String toString() {
+        return this.id + "  | " + this.name + " " + this.birth + " " + this.level + "학년 " + this.class_num + "반 " + this.num + "번 " + this.in_time_h + "시" + this.in_time_m + "분 " + this.out_time_h + "시" + this.out_time_m + "분";
     }
 
     public int getId() {
@@ -61,7 +61,6 @@ public class Student {
     public int getLevel() {
         return level;
     }
-
 
 
     public void setLevel(int level) {
