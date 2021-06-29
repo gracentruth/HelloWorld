@@ -10,13 +10,13 @@ public class Student {
     private int in_time_m;
     private int out_time_h;
     private int out_time_m;
-    private String memo;
+
 
     public Student() {
 
     }
 
-    public Student(int id, String name, int birth, int level, int class_num, int num, int in_time_h, int in_time_m, int out_time_h, int out_time_m, String memo) {
+    public Student(int id, String name, int birth, int level, int class_num, int num, int in_time_h, int in_time_m, int out_time_h, int out_time_m) {
         this.id = id;
         this.name = name;
         this.birth = birth;
@@ -27,11 +27,19 @@ public class Student {
         this.in_time_m = in_time_m;
         this.out_time_h = out_time_h;
         this.out_time_m = out_time_m;
-        this.memo = memo;
+
     }
 
+    @Override
     public String toString() {
-        return this.id + "  | " + this.name + " " + this.birth + " " + this.level + "학년 " + this.class_num + "반 " + this.num + "번 " + this.in_time_h + "시" + this.in_time_m + "분 " + this.out_time_h + "시" + this.out_time_m + "분";
+        return this.id + "  | " + this.name + " " + this.birth + " " + this.level + "학년 " +
+                this.class_num + "반 " + this.num + "번 " + this.in_time_h + "시" + this.in_time_m + "분 " +
+                this.out_time_h + "시" + this.out_time_m + "분";
+    }
+
+    public String toFString() {
+        return this.name+"-"+this.getBirth()+"-"+this.getLevel()+"-"+this.getClass_num()+"-"+this.getNum()+"-"+this.getIn_time_h()+"-"+this.getIn_time_m()+"-"+this.getOut_time_h()+"-"+this.getOut_time_m();
+
     }
 
     public int getId() {
@@ -61,7 +69,6 @@ public class Student {
     public int getLevel() {
         return level;
     }
-
 
     public void setLevel(int level) {
         this.level = level;
@@ -113,13 +120,5 @@ public class Student {
 
     public void setOut_time_m(int out_time_m) {
         this.out_time_m = out_time_m;
-    }
-
-    public String getMemo() {
-        return memo;
-    }
-
-    public void setMemo(String memo) {
-        this.memo = memo;
     }
 }

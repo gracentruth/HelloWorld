@@ -1,19 +1,20 @@
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
-
-        ArrayList<Student> list = new ArrayList<Student>();
-
         int menu_num = 1;
         boolean check = true;
 
+        //파일 불러오기
+        fileService fs = new fileService();
+        ArrayList<Student> list = new ArrayList<Student>();
+
+        list = fs.readFile();
         Menu m = new Menu(list);
         Scanner sc = new Scanner(System.in);
-
-        //파일 불러오기
 
 
         while (check) {
@@ -34,6 +35,9 @@ public class Main {
                 case 4:
                     m.delete();
                     break;
+                case 5:
+                    fs.SaveFile(list);
+                    break;
                 case 0:
                     System.out.println("종료");
                     check = false;
@@ -43,5 +47,6 @@ public class Main {
 
 
     }
+
 
 }

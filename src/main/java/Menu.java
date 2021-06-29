@@ -25,7 +25,9 @@ public class Menu {
         System.out.println("2. 업로드");
         System.out.println("3. 수정");
         System.out.println("4. 삭제");
+        System.out.println("5. 파일 저장하기");
         System.out.println("0. 종료");
+
         System.out.println("-------------");
         System.out.print("선택할 메뉴는?");
     }
@@ -52,7 +54,7 @@ public class Menu {
         s.setClass_num(sc.nextInt());
         System.out.println("번호");
         s.setNum(sc.nextInt());
-        System.out.println("생년월일");
+        System.out.println("생년월일 6자리");
         s.setBirth(sc.nextInt());
         System.out.println("등교시간");
         System.out.print("시: ");
@@ -99,7 +101,7 @@ public class Menu {
         MyList.get(update_num - 1).setClass_num(sc.nextInt());
         System.out.println("번호");
         MyList.get(update_num - 1).setNum(sc.nextInt());
-        System.out.println("생년월일");
+        System.out.println("생년월일 6자리");
         MyList.get(update_num - 1).setBirth(sc.nextInt());
         System.out.println("등교시간");
         System.out.print("시: ");

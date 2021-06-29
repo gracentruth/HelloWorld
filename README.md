@@ -51,18 +51,29 @@ B. Project2 CRUD + File/IO
 
    2. Fileservice 클래스 생성
    
-   3. 파일 불러오기 기능 추가 
-    
-   : 프로그램 시작하면, data.txt 파일 불러온 후 리스트에 추가하도록 
-    BufferReader & FileReader 클래스 사용 OR FileUtils(common-io 라이브러리) 사용 
+3. 파일 불러오기 기능 추가 
 
-    (1) FileService 클래스 내 파일 불러오기 함수 생성 : readFile() 
-        - 파일 객체 생성 
-        - 입력 스트림 생성(FileReader)
-        - 입력 버퍼 생성(BufferReader) 
-
+        : 프로그램 시작하면, data.txt 파일 불러온 후 리스트에 추가하도록 
+        BufferReader & FileReader 클래스 사용 OR FileUtils(common-io 라이브러리) 사용 
+        
+        (1) FileService 클래스 내 파일 불러오기 함수 생성 : readFile() 
+            - 파일 객체 생성 
+            - 입력 스트림 생성(FileReader)
+             : 파일로 부터 입력을 받는 스트림 
+            - 입력 버퍼 생성(BufferReader) 
+             : 파일로 부터 "Line" 단위로 입력을 받는 스트림
+        
+          
+           * String Tokenizer : 특정 문자열 기준으로 문장을 쪼개는 클래스
+4. 파일 저장하기 기능 추가 
+    : 리스트에 있는 데이터를 data.txt 파일에 저장하기
+   - FileUtils(commons-io) 사용 OR => 구현 완료 
+     a.  
+   - FireWriter 사용 OR
+   - BufferWriter & FileWriter 사용
       
-       * String Tokenizer : 문자열 쪼개는 클래스 
+
+
          
    
       
