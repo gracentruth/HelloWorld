@@ -48,17 +48,22 @@ B. Project2 CRUD + File/IO
    - maven 사이트 접속
    - build tool 맞게 dependency 복사
    - build.gradle 파일에 dependency안에 붙여넣기 
+
+   2. Fileservice 클래스 생성
    
-   2. 파일 불러오기 기능 추가 
+   3. 파일 불러오기 기능 추가 
     
    : 프로그램 시작하면, data.txt 파일 불러온 후 리스트에 추가하도록 
+    BufferReader & FileReader 클래스 사용 OR FileUtils(common-io 라이브러리) 사용 
+
+    (1) FileService 클래스 내 파일 불러오기 함수 생성 : readFile() 
+        - 파일 객체 생성 
+        - 입력 스트림 생성(FileReader)
+        - 입력 버퍼 생성(BufferReader) 
+
       
-   * 사용클래스 
-      - String Tokenizer
-      - BufferReader
-      - FileReader
-      - commons-io 라이브러리의 FileUtils 사용 
-   
+       * String Tokenizer : 문자열 쪼개는 클래스 
+         
    
       
 

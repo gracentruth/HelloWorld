@@ -11,8 +11,10 @@ public class Main {
         boolean check = true;
 
         Menu m = new Menu(list);
-
         Scanner sc = new Scanner(System.in);
+
+        //파일 불러오기
+
 
         while (check) {
             m.printMenu();
