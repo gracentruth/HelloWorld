@@ -1,5 +1,7 @@
 # HelloWorld
 
+A. Project1 CRUD project
+
 1. git 버전관리 
 - preference > Version Control > Github > + > 로그인 
 - 저장소 생성하면서 github와 공유 : 메뉴바 > Git > GitHub > Share project on GitHub 
@@ -35,6 +37,20 @@
 
 <img width="397" alt="스크린샷 2021-06-29 오후 1 11 23" src="https://user-images.githubusercontent.com/63465350/123736118-82dea980-d8db-11eb-8aa8-51202c197561.png">
 
+
+B. Project2 CRUD + File/IO 
+
+   - Overriding 
+
+   - Overload 
+   
+1. 외부 library 쓰는 법
+   
+   - library 이름 검색 
+   - maven 사이트 접속
+   - build tool 맞게 dependency 복사
+   - build.gradle 파일에 dependency안에 붙여넣기 
+   
 
    
     
