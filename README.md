@@ -58,6 +58,11 @@ B. Project2 CRUD + File/IO
     FileService 클래스 내 파일 불러오기 함수 생성 ( readFile() )
    
 
+   
+   (결과화면)
+   <img width="442" alt="스크린샷 2021-06-29 오후 10 46 31" src="https://user-images.githubusercontent.com/63465350/123808645-e7c1f000-d92b-11eb-8f79-27465e203ed1.png">
+   
+
 (1) BufferReader & FileReader(O)
 
 
@@ -87,6 +92,12 @@ C. BufferReader(입력 버퍼 생성)
 
 4. 파일 저장하기 기능 추가 
     : 리스트에 있는 데이터를 data.txt 파일에 저장하기 
+   
+   (결과 화면)
+
+
+<img width="261" alt="스크린샷 2021-06-29 오후 10 44 43" src="https://user-images.githubusercontent.com/63465350/123809103-49825a00-d92c-11eb-8518-0aedf31f5c1d.png">
+
 
    (1) FileUtils(commons-io) 사용 OR => 구현 완료
      
