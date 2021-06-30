@@ -1,6 +1,6 @@
 #HelloWorld
 
-###A. Project1 CRUD project
+### A. Project1 CRUD project
 
 1. git 버전관리 
 - preference > Version Control > Github > + > 로그인 
