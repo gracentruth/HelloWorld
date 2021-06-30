@@ -43,7 +43,7 @@
 
 : Project1 + 파일저장기능 + 파일불러오기기능 
 
-   1. 외부 library 쓰는 법
+   1. 외부 library 쓰는 법  
    
    - library 이름 검색 
    - maven 사이트 접속
