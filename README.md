@@ -114,6 +114,17 @@ C. BufferReader(입력 버퍼 생성)
    (2) FireWriter 사용 
 
    (3) BufferWriter & FileWriter 사용
+
+
+### C. Project3 Java project(Sqlite) 
+    : sqlite 를 이용하여 데이터 저장/데이터 조회
+1. 테이블 생성
+2. 데이터 추가
+3. 데이터 수정
+4. 데이터 삭제 
+5. 테이블 조회 
+    - select *from score
+    
       
 
 
