@@ -1,6 +1,6 @@
-# HelloWorld
+#HelloWorld
 
-A. Project1 CRUD project
+###A. Project1 CRUD project
 
 1. git 버전관리 
 - preference > Version Control > Github > + > 로그인 
@@ -37,8 +37,9 @@ A. Project1 CRUD project
 
 <img width="397" alt="스크린샷 2021-06-29 오후 1 11 23" src="https://user-images.githubusercontent.com/63465350/123736118-82dea980-d8db-11eb-8aa8-51202c197561.png">
 
+* * *
 
-B. Project2 CRUD + File/IO 
+###B. Project2 CRUD + File/IO 
 
 : Project1 + 파일저장기능 + 파일불러오기기능 
 
