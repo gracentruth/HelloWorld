@@ -39,7 +39,7 @@
 
 * * *
 
-###B. Project2 CRUD + File/IO 
+### B. Project2 CRUD + File/IO 
 
 : Project1 + 파일저장기능 + 파일불러오기기능 
 
