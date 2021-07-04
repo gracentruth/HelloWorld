@@ -22,10 +22,11 @@ public class Menu {
     public void printMenu() {
         System.out.println("-----메뉴-----");
         System.out.println("1. 조회");
-        System.out.println("2. 업로드");
+        System.out.println("2. 추가");
         System.out.println("3. 수정");
         System.out.println("4. 삭제");
         System.out.println("5. 파일 저장하기");
+        System.out.println("6. 이름 검색");
         System.out.println("0. 종료");
 
         System.out.println("-------------");
@@ -143,6 +144,24 @@ public class Menu {
             MyList.get(i).setId(i + 1);
 
         System.out.println("삭제되었습니다.");
+
+
+    }
+
+    public void Search(){
+        String SearchName;
+        System.out.println("검색할 이름 입력 ");
+        SearchName = sc.next();
+
+//
+        for (int i = 0; i < MyList.size(); i++){
+
+            if(MyList.get(i).getName().equals(SearchName)){
+              //  System.out.println(SearchName);
+                System.out.println("No | 이름 생년월일 학년 반  번호 등교시간 하교시간");
+                System.out.println(MyList.get(i).toString());
+            };
+        }
 
 
     }

@@ -38,6 +38,9 @@ public class Main {
                 case 5:
                     fs.SaveFile(list);
                     break;
+                case 6:
+                    m.Search();
+                    break;
                 case 0:
                     System.out.println("종료");
                     check = false;
