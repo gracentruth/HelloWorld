@@ -37,6 +37,9 @@
 
 <img width="397" alt="스크린샷 2021-06-29 오후 1 11 23" src="https://user-images.githubusercontent.com/63465350/123736118-82dea980-d8db-11eb-8aa8-51202c197561.png">
 
+   5. Search(Name)
+      <img width="424" alt="스크린샷 2021-07-04 오후 9 18 57" src="https://user-images.githubusercontent.com/63465350/124384754-be2f0d00-dd0d-11eb-8e24-420ceb2708e7.png">
+
 * * *
 
 ### B. Project2 CRUD + File/IO 
